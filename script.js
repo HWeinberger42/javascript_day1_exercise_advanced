@@ -93,6 +93,26 @@ console.log(matrix[2][3]);
 
 console.log(matrix[2][1]);
 
+// exercise advanced 4.1
+
+let unstructuredString = "Properties,$a$set$of$immutable$values,$are$passed$to$a$component's $renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passe d$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$i s$expressed$as$properties $flow$down;$actions$flow$up";
+
+console.log(unstructuredString);
+
+let structuredString = unstructuredString.split("$");
+
+console.log(structuredString.toString());
+
+console.log(structuredString.join(" "));
+
+let replacedUnstructure = unstructuredString.replaceAll("$", " ");
+
+console.log(replacedUnstructure);
+
+console.log(unstructuredString);
+
+
+
 
 
 
